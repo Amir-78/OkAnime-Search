@@ -1,0 +1,29 @@
+{
+  "name": "okanime-search",
+  "version": "1.0.0",
+  "description": "Arabic Anime Search From okanime.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amir-78/OkAnime-Search.git"
+  },
+  "keywords": [
+    "anime",
+    "discord-anime",
+    "anime",
+    "search",
+    "discord",
+    "arabic",
+    "okanime",
+    "anime"
+  ],
+  "author": "Amir.#8251",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amir-78/OkAnime-Search/issues"
+  },
+  "homepage": "https://github.com/Amir-78/OkAnime-Search#readme"
+}
