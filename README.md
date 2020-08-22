@@ -32,7 +32,7 @@ const OKsearch = require("okanime-search");
       
       if(message.content === "+search") {
 
-OKsearch.search(); // التشغيل
+OKsearch.message(message); // التشغيل
 
       }
 
