@@ -1,9 +1,25 @@
-const Discord = require("discord.js");
+const { RichEmbed, GuildMember, Message, MessageEmbed, version, Discord } = require("discord.js");
+const { EventEmitter } = require('events');
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
-function animeSearch() {
-    return {
-      search: () => {
+
+	/**
+	 * Checks a message.
+	 * 
+	 * @param {Message} message The message to check.
+	 * 
+	 * @returns {Promise<boolean>} Whether the message has triggered a threshold.
+	 * 
+	 * @example
+	 * client.on('message', (msg) => {
+	 * 	antiSpam.message(msg);
+	 * });
+	 */
+
+class animeSearch extends EventEmitter {
+
+   async message(message) {
+
 
 
             if(!message.channel.guild)return;
@@ -13,7 +29,7 @@ function animeSearch() {
             
   
             
-            const embed = new Discord.RichEmbed()
+            const embed = new RichEmbed() 
             .setTitle("OkAnime || Search")
             .setURL("https://www.okanime.com/")
             .setDescription("**`اضغط على رياكشن نوع الانمي الذي تريد البحث عن (يتم اخذ انمي عشوائي في كل مرة).`**")
@@ -180,7 +196,7 @@ function animeSearch() {
                          }
             
             
-                         let sembed = new Discord.RichEmbed()
+                         let sembed = new RichEmbed() 
             
             
             
@@ -309,7 +325,7 @@ function animeSearch() {
                          }
             
             
-                         let sembed = new Discord.RichEmbed()
+                         let sembed = new RichEmbed() 
             
             
             
@@ -438,7 +454,7 @@ function animeSearch() {
                          }
             
             
-                         let sembed = new Discord.RichEmbed()
+                         let sembed = new RichEmbed() 
             
             
             
@@ -567,7 +583,7 @@ function animeSearch() {
                          }
             
             
-                         let sembed = new Discord.RichEmbed()
+                         let sembed = new RichEmbed() 
             
             
             
@@ -696,7 +712,7 @@ function animeSearch() {
                          }
             
             
-                         let sembed = new Discord.RichEmbed()
+                         let sembed = new RichEmbed() 
             
             
             
@@ -825,7 +841,7 @@ function animeSearch() {
                          }
             
             
-                         let sembed = new Discord.RichEmbed()
+                         let sembed = new RichEmbed() 
             
             
             
@@ -954,7 +970,7 @@ function animeSearch() {
                          }
             
             
-                         let sembed = new Discord.RichEmbed()
+                         let sembed = new RichEmbed() 
             
             
             
@@ -1083,7 +1099,7 @@ function animeSearch() {
                          }
             
             
-                         let sembed = new Discord.RichEmbed()
+                         let sembed = new RichEmbed() 
             
             
             
@@ -1213,7 +1229,7 @@ function animeSearch() {
                          }
             
             
-                         let sembed = new Discord.RichEmbed()
+                         let sembed = new RichEmbed() 
             
             
             
@@ -1243,11 +1259,10 @@ function animeSearch() {
             });
             
             })
-
-                  
+   
 
       }
     }
-  }
+  
 
-  module.exports = animeSearch()
+  module.exports = new animeSearch();
